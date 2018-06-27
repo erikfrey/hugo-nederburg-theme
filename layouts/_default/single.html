@@ -96,7 +96,7 @@
       <a class="facebook" target="_blank"
       href="{{ . }}">
       <i class="fa fa-facebook"
-      title="facebook icon"></i>
+      title="facebook"></i>
     </a>
     {{end}}
 
@@ -104,7 +104,7 @@
     <a class="googleplus" target="_blank"
     href="{{ . }}">
     <i class="fa fa-google-plus"
-    title="googleplus icon"></i>
+    title="googleplus"></i>
   </a>
   {{end}}
 
@@ -113,14 +113,14 @@
   <a class="twitter" target="_blank"
   href="{{ . }}">
   <i class="fa fa-twitter-square"
-  title="twitter icon"></i>
+  title="twitter"></i>
 </a>
 {{end}}
 {{ with .Site.Params.social.linkedin }}
 <a class="linkedin" target="_blank"
 href="{{ . }}">
 <i class="fa fa-linkedin-square"
-title="linkedin icon"></i>
+title="linkedin"></i>
 </a>
 {{end}}
 
@@ -128,7 +128,7 @@ title="linkedin icon"></i>
 <a class="email" target="_blank"
 href="mailto:{{ . }}">
 <i class="fa fa-envelope"
-title="email icon"></i>
+title="email"></i>
 </a>
 {{end}}
 
@@ -136,7 +136,7 @@ title="email icon"></i>
 <a class="instagram" target="_blank"
 href="{{ . }}">
 <i class="fa fa-instagram"
-title="instagram icon"></i>
+title="instagram"></i>
 </a>
 {{end}}
 
@@ -144,7 +144,7 @@ title="instagram icon"></i>
 <a class="stackoverflow" target="_blank"
 href="{{ . }}">
 <i class="fa fa-stack-overflow"
-title="stackoverflow icon"></i>
+title="stackoverflow"></i>
 </a>
 {{end}}
 
@@ -152,7 +152,7 @@ title="stackoverflow icon"></i>
 <a class="github" target="_blank"
 href="{{ . }}">
 <i class="fa fa-github"
-title="github icon"></i>
+title="github"></i>
 </a>
 {{end}}
 
@@ -161,7 +161,15 @@ title="github icon"></i>
 <a class="pinterest" target="_blank"
 href="{{ . }}">
 <i class="fa fa-pinterest"
-title="pinterest icon"></i>
+title="pinterest"></i>
+</a>
+{{end}}
+
+{{ with .Site.Params.social.flickr }}
+<a class="flickr" target="_blank"
+href="{{ . }}">
+<i class="fa fa-flickr"
+title="flickr"></i>
 </a>
 {{end}}
 

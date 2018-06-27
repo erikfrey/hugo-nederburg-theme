@@ -105,6 +105,15 @@
     </li>
     {{end}}
 
+    {{ with .Site.Params.social.flickr }}
+    <li>
+      <a href="{{ . }}" data-animate-hover="pulse" class="flickr" target="_blank">
+        <i class="fa fa-flickr" title="flickr"></i>
+        <span class="screen-reader-text">flickr</span>
+      </a>
+    </li>
+    {{end}}
+
     {{ if .Site.Params.social.rss }}
     <li>
       <a href="{{ .Site.RSSLink }}" data-animate-hover="pulse" class="rss" target="_blank">
