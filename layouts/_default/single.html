@@ -63,20 +63,23 @@
     </p>
   </nav>-->
 
+  {{ if .Params.categories }}
   <div class="entry-categories"><p><span>Categories</span>
     {{ range $index, $name := .Params.categories }}
     <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" title="View all posts in {{ $name }}">{{ $name }}</a>{{ end }}
   </p>
 </div>
+  {{ end }}
 
 
-
+  {{ if .Params.tags }}
 <div class="entry-tags"><p><span>Tags</span>
   {{ range $index, $name := .Params.tags }}
   <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="View all posts tagged {{ $name }}">{{ $name }}</a>
   {{ end }}
 
 </p></div>	</div>
+  {{ end }}
 {{ if and (isset .Site.Params "author") .Site.Params.author }}
 <div class="author-meta">
 
